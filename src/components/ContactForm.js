@@ -16,12 +16,12 @@ export default function ContactForm() {
     const service = data.get("service");
     const message = data.get("message");
 
-    const subject = encodeURIComponent(`Consultation request: ${service}`);
+    const subject = encodeURIComponent(`Elite Solutions Group inquiry: ${service}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nCompany: ${company}\nEmail: ${email}\nService: ${service}\n\nProject details:\n${message}`
+      `Name: ${name}\nOrganization: ${company}\nEmail: ${email}\nService needed: ${service}\n\nWhat is going on:\n${message}`
     );
 
-    setStatus("Your email application is opening with your consultation request.");
+    setStatus("Your email program is opening with the information you entered.");
     window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
   }
 
@@ -29,7 +29,7 @@ export default function ContactForm() {
     <form className="contact-form" onSubmit={submit}>
       <div className="form-row">
         <label>
-          Name
+          Your name
           <input name="name" type="text" autoComplete="name" required />
         </label>
         <label>
@@ -43,26 +43,26 @@ export default function ContactForm() {
           <input name="email" type="email" autoComplete="email" required />
         </label>
         <label>
-          Area of interest
+          What do you need help with?
           <select name="service" defaultValue="IT Consulting">
             <option>IT Consulting</option>
-            <option>Monthly Managed IT Services</option>
-            <option>Computer Refresh or Installation</option>
+            <option>Monthly IT Support</option>
+            <option>Computer Refresh or Setup</option>
             <option>Cybersecurity</option>
-            <option>Compliance Readiness</option>
-            <option>Networking & Infrastructure</option>
-            <option>Cloud & Endpoint Management</option>
-            <option>Web & Application Solutions</option>
+            <option>Compliance Technology Support</option>
+            <option>Network or Firewall Work</option>
+            <option>Cloud or Endpoint Management</option>
+            <option>Website or Application Work</option>
           </select>
         </label>
       </div>
       <label>
-        How can we help?
+        Tell me what is going on
         <textarea name="message" rows="6" required />
       </label>
-      <button className="button primary full" type="submit">Request a Consultation</button>
+      <button className="button primary full" type="submit">Send Your Request</button>
       {status && <p className="form-status" role="status">{status}</p>}
-      <p className="form-note">Before launch, replace the placeholder business email in <code>src/components/ContactForm.js</code>.</p>
+      <p className="form-note">Update the business email in <code>src/components/ContactForm.js</code> before publishing the final site.</p>
     </form>
   );
 }

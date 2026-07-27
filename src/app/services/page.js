@@ -4,12 +4,48 @@ import Testimonials from "@/components/Testimonials";
 import Link from "next/link";
 
 const groups = [
-  ["Legal-Sector IT Consulting", ["Technology assessments for law firms and legal-service organizations", "Confidentiality-focused network and endpoint reviews", "Secure remote-access and collaboration planning", "Vendor evaluation, documentation, and project coordination", "Technology support designed around sensitive client and case information"]],
-  ["Cybersecurity & Cybercrime Readiness", ["Security posture and cybercrime-risk reviews", "Vulnerability scanning and remediation planning", "Identity, MFA, and access-control reviews", "Endpoint protection and security baselines", "Incident-readiness planning and coordination with forensic or legal specialists"]],
-  ["Compliance Readiness", ["NIST and CIS-aligned gap assessments", "FERPA, healthcare, financial, and professional-services safeguards", "Cyber-insurance questionnaire support", "Policy, evidence, and control documentation", "Coordination with attorneys, auditors, assessors, and specialized partners"]],
-  ["Networking & Infrastructure", ["Network, Wi-Fi, firewall, segmentation, and VPN reviews", "Windows and Linux server support", "Virtualization and cloud infrastructure", "Backup, continuity, and disaster-recovery planning", "Technology inventory, diagrams, and documentation"]],
-  ["Cloud & Endpoint Management", ["Microsoft 365 and Azure administration", "AWS consulting and cloud planning", "Intune and Entra ID configuration", "Device configuration, patching, encryption, and endpoint protection", "Secure user onboarding and offboarding workflows"]],
-  ["Web & Application Solutions", ["Secure business and organizational websites", "JavaScript and Node.js applications", "Internal portals, intake forms, and dashboards", "Database and API integration", "Mobile application planning and prototyping"]]
+  ["IT Consulting", [
+    "Review your current technology and identify problem areas",
+    "Explain risks, priorities, and options in plain language",
+    "Create a practical improvement plan",
+    "Help compare vendors, products, and service proposals",
+    "Provide written findings and recommendations"
+  ]],
+  ["Monthly IT Support", [
+    "Windows, driver, and approved software updates",
+    "Computer refreshes and new-device setup",
+    "Endpoint protection and device-health checks",
+    "User account, Microsoft 365, Intune, and Entra support",
+    "Monthly or quarterly security and technology reports"
+  ]],
+  ["Cybersecurity", [
+    "Security posture reviews",
+    "Vulnerability scanning and remediation planning",
+    "MFA, identity, and access-control reviews",
+    "Endpoint protection and security-baseline checks",
+    "Incident preparation and partner coordination when needed"
+  ]],
+  ["Compliance Technology Support", [
+    "Review technical controls and identify gaps",
+    "Help organize policies, screenshots, reports, and other evidence",
+    "Support cyber-insurance and security questionnaire preparation",
+    "Work with legal, audit, or compliance professionals when required",
+    "Track recommended improvements and completed changes"
+  ]],
+  ["Networks, Cloud & Infrastructure", [
+    "Network, Wi-Fi, firewall, VPN, and segmentation reviews",
+    "Windows and Linux server support",
+    "Microsoft 365, Azure, AWS, Intune, and Entra ID",
+    "Virtualization, backup, recovery, and continuity planning",
+    "Inventory, diagrams, and technical documentation"
+  ]],
+  ["Web & Application Work", [
+    "Business and organizational websites",
+    "JavaScript and Node.js applications",
+    "Internal portals, intake forms, and dashboards",
+    "Database and API connections",
+    "Mobile application planning and prototypes"
+  ]]
 ];
 
 export const metadata = { title: "Services | Elite Solutions Group" };
@@ -21,9 +57,9 @@ export default function ServicesPage() {
       <main className="inner-page">
         <section className="inner-hero">
           <div className="container">
-            <p className="section-kicker">Legal-sector and regulated technology</p>
-            <h1>Security-conscious IT for sensitive work.</h1>
-            <p>Engage Elite Solutions Group for an assessment, a defined implementation project, ongoing support, or coordination with a specialized legal, audit, forensic, or cybersecurity partner.</p>
+            <p className="section-kicker">Services</p>
+            <h1>IT support, security help, and clear technology advice.</h1>
+            <p>I can come in for a one-time project, review your environment, provide monthly support, or help manage a larger project with another specialist.</p>
           </div>
         </section>
         <section className="section-pad">
@@ -36,12 +72,16 @@ export default function ServicesPage() {
             ))}
           </div>
           <div className="container scope-note">
-            <strong>Responsible scope matters.</strong>
-            <p>Elite Solutions Group provides technology and cybersecurity consulting—not legal advice, legal representation, compliance certification, or independent audit opinions. Advanced digital forensics and penetration testing may be performed with qualified partners under an authorized written scope.</p>
+            <strong>About specialized work</strong>
+            <p>Elite Solutions Group provides technology and cybersecurity services, not legal advice or compliance certification. Advanced digital forensics, formal audits, legal opinions, and specialized penetration tests may require a qualified partner and a written scope.</p>
           </div>
-          <div className="container center-cta"><h2>Not sure where to begin?</h2><p>Start with a focused technology and security assessment.</p><Link className="button primary" href="/#contact">Schedule a Consultation</Link></div>
+          <div className="container center-cta">
+            <h2>Not sure what service you need?</h2>
+            <p>Start by explaining the problem. I will help you figure out the right next step.</p>
+            <Link className="button primary" href="/#contact">Contact Elite Solutions Group</Link>
+          </div>
         </section>
-        <Testimonials title="Client confidence belongs on every service page." intro="Replace these starter cards with approved testimonials that describe discretion, communication, practical problem-solving, and measurable improvements." />
+        <Testimonials />
       </main>
       <Footer />
     </>

@@ -1,46 +1,41 @@
 const placeholderTestimonials = [
   {
-    quote: "Replace this text with an approved statement describing the client’s experience, the problem addressed, and the result.",
-    name: "Approved Client Name",
-    role: "Law Firm, Government Agency, Healthcare, or Tax Organization"
+    quote: "Add a real client quote here about the quality of the work, communication, or support provided.",
+    name: "Client name with approval",
+    role: "Organization or industry"
   },
   {
-    quote: "Use a concise, authentic quote that highlights trust, communication, discretion, responsiveness, or technical improvement.",
-    name: "Approved Client Name",
-    role: "Private Investigation, Education, or Professional Services"
+    quote: "Add a real client quote here about trust, responsiveness, security, or solving a difficult technology problem.",
+    name: "Client name with approval",
+    role: "Organization or industry"
   },
   {
-    quote: "Only publish testimonials and organization names after receiving written permission from the client.",
-    name: "Approved Client Name",
-    role: "Client Title or Organization Type"
+    quote: "Add a real client quote here about monthly support, reporting, computer refreshes, or technology recommendations.",
+    name: "Client name with approval",
+    role: "Organization or industry"
   }
 ];
 
-export default function Testimonials({
-  eyebrow = "Client perspective",
-  title = "Trusted guidance for sensitive environments.",
-  intro = "This section is ready for approved client testimonials. The starter text is intentionally marked so no endorsement is implied before permission is received.",
-  testimonials = placeholderTestimonials
-}) {
+export default function Testimonials({ testimonials = placeholderTestimonials }) {
   return (
     <section className="testimonials section-pad">
       <div className="container">
         <div className="testimonial-heading">
           <div>
-            <p className="section-kicker">{eyebrow}</p>
-            <h2>{title}</h2>
+            <p className="section-kicker">Client feedback</p>
+            <h2>What clients say about the work.</h2>
           </div>
-          <p>{intro}</p>
+          <p>Replace these three sample cards with real quotes after the client gives permission to use their name or organization.</p>
         </div>
         <div className="testimonial-grid">
           {testimonials.map((item, index) => (
             <figure className="testimonial-card" key={`${item.name}-${index}`}>
-              <div className="testimonial-stars" aria-label="Testimonial placeholder">★★★★★</div>
+              <div className="testimonial-stars" aria-hidden="true">★★★★★</div>
               <blockquote>“{item.quote}”</blockquote>
               <figcaption>
                 <strong>{item.name}</strong>
                 <span>{item.role}</span>
-                <small>TESTIMONIAL PLACEHOLDER — REPLACE BEFORE PUBLISHING</small>
+                <small>REPLACE WITH AN APPROVED TESTIMONIAL</small>
               </figcaption>
             </figure>
           ))}

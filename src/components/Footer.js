@@ -9,7 +9,7 @@ export default function Footer() {
             <span className="brand-mark">ESG</span>
             <span className="brand-copy"><strong>Elite Solutions</strong><small>Group</small></span>
           </div>
-          <p>Practical technology guidance for organizations that need secure, reliable, and scalable solutions.</p>
+          <p>IT support, cybersecurity, compliance technology help, and practical advice for organizations that handle sensitive information.</p>
         </div>
         <div>
           <h3>Company</h3>
@@ -18,7 +18,7 @@ export default function Footer() {
           <Link href="/#contact">Contact</Link>
         </div>
         <div>
-          <h3>Legal</h3>
+          <h3>Information</h3>
           <Link href="/privacy">Privacy Policy</Link>
           <span>Houston, Texas</span>
         </div>
