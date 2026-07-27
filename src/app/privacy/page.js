@@ -1,0 +1,9 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+
+export const metadata = { title: "Privacy Policy | Elite Solutions Group" };
+
+export default function PrivacyPage() {
+  return <><Header /><main className="inner-page"><section className="inner-hero compact"><div className="container"><p className="section-kicker">Legal</p><h1>Privacy Policy</h1><p>Last updated: July 27, 2026</p></div></section><section className="section-pad"><div className="container legal-copy"><h2>Information we collect</h2><p>We may collect information you voluntarily provide when requesting a consultation, including your name, organization, email address, and project details.</p><h2>How information is used</h2><p>Information is used to respond to inquiries, evaluate service needs, communicate about potential engagements, and improve our services.</p><h2>Sharing</h2><p>We do not sell personal information. Information may be shared with service providers or professional partners only when reasonably necessary to respond to a request or deliver an authorized service.</p><h2>Security</h2><p>Reasonable administrative and technical safeguards are used to protect information. No internet transmission or storage method can be guaranteed as completely secure.</p><h2>Contact</h2><p>Replace this paragraph with your official business email and mailing contact before publication.</p><p className="legal-note">This starter policy is general website language and is not legal advice. Have it reviewed when you add analytics, payments, client accounts, or data-processing services.</p></div></section><Testimonials eyebrow="Client trust" title="Privacy is part of the engagement—not an afterthought." intro="Use this area for an approved testimonial about discretion, responsible data handling, documentation, or communication." /></main><Footer /></>;
+}
