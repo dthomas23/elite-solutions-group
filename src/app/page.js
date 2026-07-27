@@ -98,11 +98,21 @@ export default function Home() {
         <section id="managed-services" className="managed section-pad">
           <div className="container managed-grid">
             <Reveal>
-              <p className="section-kicker">Monthly IT service</p>
-              <h2>Ongoing support without hiring a full-time IT person.</h2>
-              <p className="managed-intro">
-                Some clients need somebody who can come in on a regular schedule, check the environment, handle updates, review security, give an honest report, and recommend what should happen next. That is a service I already provide.
-              </p>
+              <p className="section-kicker">Managed IT & Security Oversight</p>
+
+<h2>
+  Reliable IT oversight for organizations that cannot afford gaps in security,
+  maintenance, or support.
+</h2>
+
+<p className="managed-intro">
+  Elite Solutions Group provides scheduled IT support, system maintenance,
+  security reviews, and technical oversight for organizations that need
+  dependable expertise without adding full-time internal staff. Our consultants
+  complete approved updates and computer refreshes, review network and endpoint
+  security, document findings, and provide clear recommendations based on the
+  organization’s priorities and level of risk.
+</p>
               <Link className="button primary" href="#contact">Ask About Monthly Support</Link>
             </Reveal>
             <Reveal delay={120} className="managed-panel">
@@ -129,7 +139,7 @@ export default function Home() {
 
         <section id="process" className="process section-pad">
           <div className="container">
-            <Reveal><p className="section-kicker">How I work</p><h2>I look at the problem first. Then we decide what makes sense.</h2></Reveal>
+            <Reveal><p className="section-kicker">Our Approach</p><h2> We assess the problem, explain the options, and recommend a practical path forward.</h2></Reveal>
             <div className="process-grid">
               {[
                 ["01", "Review", "I look at the computers, accounts, network, security settings, documentation, and the problem you are trying to solve."],
@@ -150,7 +160,7 @@ export default function Home() {
        <section id="about" className="about section-pad">
   <div className="container about-grid">
     <Reveal className="founder-card">
-      <div className="founder-monogram">60+</div>
+      <div className="founder-monogram">16+</div>
 
       <div>
         <strong>Years of Combined Experience</strong>
@@ -162,8 +172,7 @@ export default function Home() {
       <p className="section-kicker">About Elite Solutions Group</p>
 
       <h2>
-        Experienced consultants who understand the technology, the risk,
-        and the environment behind the work.
+        Experienced consultants who understand you're technology need.
       </h2>
 
       <p>
@@ -215,7 +224,7 @@ export default function Home() {
 </section>
         <section className="security-banner">
           <div className="container banner-grid">
-            <div><p className="section-kicker">A clear scope</p><h2>Honest help without overselling the service.</h2></div>
+            <div><p className="section-kicker">A clear scope</p><h2>Clear guidance. Practical solutions. No unnecessary upselling.</h2></div>
             <p>
               Elite Solutions Group provides technology and cybersecurity support. We can help identify gaps, improve controls, organize documentation, and prepare for compliance-related work. We do not provide legal advice or issue compliance certifications. Formal legal opinions, independent audits, advanced forensics, and specialized penetration tests may require a qualified partner.
             </p>
