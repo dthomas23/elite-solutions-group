@@ -147,23 +147,72 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="about section-pad">
-          <div className="container about-grid">
-            <Reveal className="founder-card"><div className="founder-monogram">DT</div><div><strong>David Thomas</strong><span>Founder & Technology Consultant</span></div></Reveal>
-            <Reveal delay={120}>
-              <p className="section-kicker">About Elite Solutions Group</p>
-              <h2>I know how to look at technology from both the technical side and the business side.</h2>
-              <p>
-                My background includes IT support, cybersecurity, networking, cloud platforms, Windows and Linux systems, endpoint management, web and mobile application development, education, and technology operations. I also understand that law firms, investigators, healthcare offices, tax organizations, schools, and government offices have to be careful with access, records, privacy, and documentation.
-              </p>
-              <p>
-                I am not going to pretend I do every specialty by myself. I handle the work I know, tell you when something is outside my scope, and coordinate with another qualified professional when the project calls for it.
-              </p>
-              <div className="skills"><span>Azure</span><span>AWS</span><span>Microsoft 365</span><span>Intune</span><span>Linux</span><span>Networking</span><span>Node.js</span><span>Cybersecurity</span><span>Endpoint Support</span><span>IT Analysis</span></div>
-            </Reveal>
-          </div>
-        </section>
+       <section id="about" className="about section-pad">
+  <div className="container about-grid">
+    <Reveal className="founder-card">
+      <div className="founder-monogram">60+</div>
 
+      <div>
+        <strong>Years of Combined Experience</strong>
+        <span>IT • Cybersecurity • Cloud • Infrastructure</span>
+      </div>
+    </Reveal>
+
+    <Reveal delay={120}>
+      <p className="section-kicker">About Elite Solutions Group</p>
+
+      <h2>
+        Experienced consultants who understand the technology, the risk,
+        and the environment behind the work.
+      </h2>
+
+      <p>
+        Elite Solutions Group brings together consultants with more than
+        16 years of combined experience in information technology,
+        cybersecurity, networking, cloud platforms, Windows and Linux
+        systems, endpoint management, application development, and
+        technology operations.
+      </p>
+
+      <p>
+        The consulting team supports organizations where privacy,
+        documentation, access control, and business continuity matter.
+        This includes law firms, private investigators, healthcare
+        offices, tax and accounting organizations, higher education
+        institutions, government offices, nonprofits, and growing
+        businesses.
+      </p>
+
+      <p>
+        Our consultants understand how cybercrime, privacy requirements,
+        evidence handling, incident documentation, and legal obligations
+        can affect technology decisions. Each engagement begins with
+        understanding how the organization operates, where risk exists,
+        and what improvements are practical.
+      </p>
+
+      <p>
+        Elite Solutions Group provides recommendations, completes work
+        within the agreed scope, and coordinates with qualified legal,
+        compliance, forensic, or cybersecurity partners when an
+        engagement requires additional specialization.
+      </p>
+
+      <div className="skills">
+        <span>Cloud Platforms</span>
+        <span>Windows Systems</span>
+        <span>Linux Systems</span>
+        <span>Endpoint Management</span>
+        <span>Networking</span>
+        <span>Cybersecurity</span>
+        <span>Compliance Support</span>
+        <span>Application Development</span>
+        <span>IT Strategy</span>
+        <span>Incident Readiness</span>
+      </div>
+    </Reveal>
+  </div>
+</section>
         <section className="security-banner">
           <div className="container banner-grid">
             <div><p className="section-kicker">A clear scope</p><h2>Honest help without overselling the service.</h2></div>
